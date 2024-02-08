@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikow SKI Skuhrov | oddíl běžeckého lyžování </title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="https://kit.fontawesome.com/6797287db8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Viaoda+Libre&display=swap" rel="stylesheet">
+</head>
+
+<html>
+    <body>
+        <header>
+                <div class="navbar_wrapper container">
+                    <div>
+                        <a href="index.html">  
+                            <img src="images/wikow_ski_logo.png" alt="logo" id="logo">
+                        </a>
+        
+                        <span class="nav__toggle" id="nav-toggle">
+                            <i class="fa-solid fa-bars nav__burger"></i>
+                            <i class="fa-solid fa-xmark nav__close"></i>
+                        </span>
+                    </div>    
+
+                    <nav class="nav">        
+                        <div class="nav__menu" id="nav-menu">
+                           <ul class="nav__list">
+                              <li class="dropdown__item">
+                                 <div class="nav__link">
+                                    My <i class="fa-solid fa-chevron-down dropdown__arrow"></i></i>
+                                 </div>
+            
+                                 <ul class="dropdown__menu">
+                                    <li>
+                                       <a href="#" class="dropdown__link">
+                                           O nás
+                                       </a>                          
+                                    </li>
+            
+                                    <li>
+                                       <a href="#" class="dropdown__link">
+                                           Co nabízíme
+                                       </a>
+                                    </li> 
+                                    
+                                    <li>
+                                       <a href="#" class="dropdown__link">
+                                           Jak trénujeme
+                                       </a>
+                                    </li>
+                                    
+                                    <li>
+                                       <a href="#" class="dropdown__link">
+                                           Nejúspěšnější sportovci oddílu
+                                       </a>
+                                    </li> 
+            
+                                    <li>
+                                       <a href="#" class="dropdown__link">
+                                          členství
+                                       </a>
+                                    </li> 
+                                  
+                                 </ul>
+                              </li>
+            
+                              <li><a href="#" class="nav__link">Aktuality</a></li>
+        
+                              <li class="dropdown__item">
+                                 <div class="nav__link">
+                                    Závody <i class="fa-solid fa-chevron-down dropdown__arrow"></i>
+                                 </div>
+            
+                                 <ul class="dropdown__menu">
+                                    <li>
+                                       <a href="#" class="dropdown__link"> Orlický pohár
+                                       </a>                          
+                                    </li>
+            
+                                    <li>
+                                       <a href="#" class="dropdown__link">
+                                         Pohár KHK
+                                       </a>
+                                    </li>
+            
+                                    <li>
+                                       <a href="#" class="dropdown__link">
+                                           Orlický maraton
+                                       </a>
+                                    </li>
+            
+                                    <li>
+                                       <a href="#" class="dropdown__link">
+                                          Kritérium posledního sněhu
+                                       </a>
+                                    </li>
+            
+                                    <li>
+                                       <a href="#" class="dropdown__link">
+                                          Orlický rollerski cup
+                                       </a>
+                                    </li>
+            
+                                    <li>
+                                       <a href="#" class="dropdown__link">
+                                          koláčkový závod
+                                       </a>
+                                    </li>
+            
+                                 </ul>
+                              </li>
+                              
+                              <li><a href="#" class="nav__link">Tratě</a></li>
+            
+                              <li><a href="#" class="nav__link">Galerie</a></li>
+            
+                              <li><a href="#" class="nav__link">Kontakty</a></li>
+            
+                        </div>
+                     </nav>     
+        
+                    <div class="right_wrapper">
+                        <p><a href="mailto: ">ski.skuhrov@seznam.cz</a></p>
+                        <a href="index.html">  <i class="fa-solid fa-house" id="house"></i></a>
+                    </div>
+                </div>
+            </header>
+
+        <main>
+
+        </main>
+
+        <!-- <footer class="container">
+            <hr>
+            <div class="footer_wrapper">
+                <p>© Wikow SKI Skuhrov nad Bělou 2024</p>
+                <p>Designed & Created by <span class="fw-bold">Jan Novotný</span></p>
+            </div>
+        </footer> -->
+ 	<script src="js/menu.js"></script>
+    </body>
+</html>

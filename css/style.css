@@ -1,0 +1,372 @@
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    height: 100%;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;    
+  }
+
+  .mySlides img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
+    min-height: 490px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dots{
+    position: absolute;;
+    bottom: 18px;
+    right: 50%;
+    transform: translate(50%);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: rgb(32, 32, 32);
+    font-weight: 500;
+    font-size: 16px;
+    height: 32px;
+    width: 32px;    
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease-out;  
+    user-select: none;
+  }
+  
+  .active, .dot:hover {
+    background-color:var(--clr-primary-100);
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 18px ;
+    font-weight: 600;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* end of slider */
+
+
+
+
+
+.landing_text{
+    text-align: center;
+    padding-block: 20px;
+    font-weight: var(--fw-bold);;
+    font-size: 28px;
+    background-color: var(--clr-primary-100);
+    color: var(--clr-neutral-200);
+}
+.landing_text--red{
+    background-color: var(--clr-primary-200);
+}
+
+/* about us page*/
+.landing_text--small{
+    font-size: 18px;
+    font-weight: 400;
+    padding-block: 45px;
+    line-height: 1.65;
+}
+
+/* &50/50 */
+.one-to-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.one-to-one__image{
+    width: 40%;
+}
+.one-to-one__image img{
+    width: 100%;
+    aspect-ratio: 16/10;    
+}
+.one-to-one p,
+.one-to-one--column p{
+    margin-top: 12px;
+}
+.one-to-one__text{   
+    width: 50%;
+}
+.one-to-one__text--small{
+    font-size: 18px;
+}
+
+/* second text box in about us page */
+.one-to-one--reversed .one-to-one__text{
+    order: 1;
+}
+/* third text box in about us page */
+.one-to-one--column .one-to-one__text--small{
+    margin-top: 2rem;
+}
+
+
+.full-width-image{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* SERVICES */
+.services_wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.service_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.service_wrapper i{
+    font-size: 48px;
+    color: var(--clr-primary-100);
+    margin-bottom: 8px;
+}
+.service_wrapper p{
+    max-width: 380px;
+    margin-top: 10px;
+}
+
+.service .more_info{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+/* CONTACT */
+
+.contact{
+    background-color: var(--clr-primary-100);
+}
+.contact .secondary_heading{
+    color: white;
+    font-size: 40px;
+}
+.contacts_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding-top: 45px;
+}
+.contact_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_wrapper i{
+    font-size: 70px;
+    margin-bottom: 5px;
+    transition: 0.3s ease;
+}
+.contact_wrapper i:hover{
+    transform: translate(0,-4px);
+    /* transform: rotate(5deg); */
+}
+
+/* news */
+.news{
+    color: var(--clr-primary-200);
+    border: 5px solid var(--clr-primary-200);
+    padding: 2.5rem 3rem !important;
+    margin: 4rem auto !important;
+    font-weight: 600;
+    box-shadow: 0px 6px 16px 0px rgba(49, 49, 49, 0.15);
+    font-size: 1.25rem;
+}
+.news p{
+    margin-block:5px;
+}
+.news span{
+    font-weight: var(--fw-regular);
+}
+.news .secondary_heading{
+    color: var(--clr-primary-200);
+}
+.news .more_info{
+    color: var(--clr-primary-200);
+}
+
+/* SPONZORS */
+.sponzors{
+    margin-top: 20px;
+}
+
+.sponzor_wrapper{
+    display: flex;
+    align-items: center;
+   
+}
+.sponzors_wrapper{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    scroll-behavior:smooth;
+    gap: 4rem;  
+    overflow-x: hidden;
+    width: 97%;   
+}
+.sponzor_btn{
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.sponzor_btn:hover{
+    transform:scale(0.92);
+}
+button{
+    border: none;
+    background-color: unset;
+}
+
+/* &breakpoints*/
+@media(max-width:1350px){
+    
+    .navbar_wrapper{
+        display: block;
+    }
+    .menu{
+        padding-block: 1rem;
+        display: none;
+    }
+   
+    .menu li{
+        text-align: center;
+        padding: 0.5rem;
+    }        
+    .submenu{
+        position: static;
+        padding: 0.5rem;
+        opacity: 1;
+        box-shadow:unset;
+        text-align: center;
+        width: 100%;
+    }
+    .submenu li{
+        margin-bottom: 12px;
+        padding-block: 0px;
+    }
+
+    /* show on hover */  
+
+    #cross,#bars{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        font-size: 40px;
+    } 
+    #cross{
+        display: none;
+    }
+    
+    .right_wrapper a, .right_wrapper i{
+        display: none;
+    }
+}
+
+@media(max-width:900px){
+    
+    .news p{
+        margin-block:16px;
+    }    
+    
+    .contacts_wrapper{
+        flex-direction: column;
+    }
+
+    .one-to-one{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .one-to-one__image ,.one-to-one__text{
+        width: 100%;
+    }
+    .one-to-one__image img{
+        width: 100%;
+        max-width: 100%;    
+    }
+    .one-to-one--reversed .one-to-one__text{
+        order: unset;
+    }
+
+    .contacts_wrapper{
+        flex-wrap: wrap;
+        gap:40px;
+    }
+    .instagram{
+        order: 1;
+    }
+    .facebook{
+        order:2
+    }
+}
+
+@media(max-width:500px){
+
+    html{
+        font-size: 14px ;
+    }
+    
+    header{
+        height: 80px;
+    }
+
+    #logo{
+        min-width: 220px;
+        max-width: 250px;
+    }
+
+    .mySlides img{
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        max-height: 80vh;
+        object-fit: cover;
+        min-height: 490px;
+        max-height: 490px;
+    }
+    .landing_text{
+        font-size: 24px;
+    }
+    .landing_text--small{
+        font-size: 16px;
+    }
+    
+    .services_wrapper{
+        margin-top: 75px;
+        row-gap: 4.5rem;
+    }   
+}
