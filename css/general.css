@@ -6,6 +6,7 @@
     --clr-neutral-100: #000;
     --clr-neutral-200: #fff;
     --clr-accent-100: #fafafa;
+    --clr-accent-200: #007FE9;
 
     /*Fonts*/
     --ff-primary: "Montserrat",sans-serif;
@@ -129,6 +130,16 @@ body {
     padding-block:140px
 }
 
+.margin-block--300{
+    padding-block: 50px;
+}
+.margin-block--400{
+    padding-block:100px
+}
+.margin-block--500{
+    padding-block:140px
+}
+
 .fw-bold{
     font-weight: var(--fw-semi-bold);
 }
@@ -152,9 +163,19 @@ body {
     color: var(--clr-primary-100);
     font-weight: 600;
 }
+.special-text--lblue{
+    color: var(--clr-accent-200);
+    font-weight: 500;
+}
 .special-text--underline{
     text-decoration: underline;
 }
+
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 /* &header */
 #logo{

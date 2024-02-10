@@ -85,7 +85,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition:  .3s; 
+  transition:  .3s;
+  user-select: none; 
+}
+
+.link--active{
+  color: var(--clr-primary-200) !important;
 }
 
 .nav__link:hover{
@@ -167,10 +172,7 @@
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
-  .container {
-    margin-inline: 1rem;
-  }
-
+  
   .nav__link {
     padding-inline: 1rem;
   }

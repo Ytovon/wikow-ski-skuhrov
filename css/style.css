@@ -34,8 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    color: rgb(32, 32, 32);
+    color: rgb(54, 54, 54);
     font-weight: 500;
     font-size: 16px;
     height: 32px;
@@ -75,7 +74,7 @@
 
 .landing_text{
     text-align: center;
-    padding-block: 20px;
+    padding-block: 22px;
     font-weight: var(--fw-bold);;
     font-size: 28px;
     background-color: var(--clr-primary-100);
@@ -251,6 +250,58 @@ button{
     background-color: unset;
 }
 
+
+/* contact css */
+
+.contact-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-section__table{
+    margin-top: 1rem;
+    border-collapse: collapse;
+    color: var(--clr-primary-100);
+}
+
+.contact-section__table th{
+    text-align: left;
+    min-width: 170px;
+    font-weight: var(--fw-bold);
+    border-bottom: 2px solid var(--clr-primary-100);
+}
+.contact-section__table td{
+    min-width: 170px;
+    border-bottom: 2px solid var(--clr-primary-100);
+    padding: 0.2rem 0.5rem;
+
+}
+
+.table__number{
+    text-align: right;
+    font-weight: var(--fw-bold);
+    color: var(--clr-accent-200);
+
+}
+
+/* section 2 */
+.contact--contact-page{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* section 3 */
+.service--contact p{
+    color: var(--clr-primary-100);
+    font-weight: 500;
+    line-height: 1.1;
+}
+.service--contact .services_wrapper{
+    margin:0;
+}
+
+
 /* &breakpoints*/
 @media(max-width:1350px){
     
@@ -332,6 +383,20 @@ button{
     .facebook{
         order:2
     }
+
+    /* table */
+    .contact-section__table{
+        font-size: 16px;
+        margin-inline: 1rem;
+    }
+    .contact-section__table td{
+        padding: 0.5rem 0rem;
+        min-width: unset;
+    }
+    .contact-section__table th{
+        min-width: unset;
+        word-wrap: break-word;
+    }
 }
 
 @media(max-width:500px){
@@ -370,3 +435,4 @@ button{
         row-gap: 4.5rem;
     }   
 }
+

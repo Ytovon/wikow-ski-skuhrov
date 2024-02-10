@@ -1,0 +1,142 @@
+/* actuality text */
+.actuality-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.actuality h3,
+.actuality__date{
+    z-index: 400;
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-100);
+}
+.actuality-heading .actuality__date{
+    text-align: right;
+}
+
+/* divider */
+.actuality-divider{
+    position: relative;
+}
+.actuality--logo .actuality-divider{
+    margin-top: 40px;
+}
+.actuality-divider__image{
+    position: absolute;
+    top:0;
+    right: 50%;
+    transform: translate(50%,-50%);
+    width: 130px;
+}
+.actuality-divider__line{
+    height: 3px;
+    background-color: var(--clr-primary-100);
+}
+
+
+/* content */
+/* text style */
+.actuality-content p{
+    margin-top: 25px;
+}
+.actuality--logo .actuality-content p{
+    margin-top: 50px;
+}
+
+/* leafleat */
+.actuality-content__image{
+    margin-top: 15px;
+}
+.actuality-content__image--small{
+    width: 200px;
+}
+
+/*list styling*/
+.actuality-content__list{
+    margin-left: 2rem;
+    margin-block: 2rem;
+    list-style: disc inside;
+    color: var(--clr-primary-100); /* Set the text color of the list items */
+
+}
+/* images types*/
+.actuality-content__images{
+    display: flex;
+    margin-block: 2rem;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 2rem;
+}
+.actuality-content__images img{
+    width: clamp(200px,30vw,496px);
+    aspect-ratio: 19/15;
+}
+.contain img{
+    object-fit:contain;
+}
+
+.video{
+    width: clamp(200px,30vw,496px);
+    aspect-ratio: 16/9;
+}
+
+/* sponzors */
+.actuality-content__sponzors{
+    margin-block: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* breakpoints */
+@media(max-width:900px){
+    
+    .actuality-heading h3{
+        font-size: 26px;
+    }
+
+    .actuality-content__images{
+        justify-content: center;
+    }
+    .actuality-content__images img{
+        width: clamp(300px,30vw,496px);
+    }
+    .video{
+        width: clamp(300px,30vw,496px);
+    }
+}
+
+@media(max-width:500px){
+    .actuality{
+        padding-block: 3rem;
+    }
+    
+    .actuality-divider{
+        margin-top: 45px;
+    }
+    .actuality-heading h3{
+        font-size: 21px;
+    }
+
+    .actuality-heading .actuality__date{
+        font-size: 16px;
+        padding-left: 0.5rem;
+    }  
+
+    .actuality-content p{
+        font-size: 16px;
+    }
+
+    /* styles just for actuality with logo - actuality--logo*/
+    .actuality--logo .actuality-divider{
+        margin-top: 40px;
+    }    
+    .actuality--logo .actuality-content p{
+        margin-top: 50px !important;
+    }
+
+    /* images */
+    .actuality-content__images{
+        row-gap: 1.5rem;
+    }
+}
