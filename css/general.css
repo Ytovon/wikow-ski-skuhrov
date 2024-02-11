@@ -182,6 +182,8 @@ body {
     text-decoration: underline;
 }
 
+
+
 /*list styling*/
 .unordered-list{
     margin-left: 2rem;
@@ -205,6 +207,12 @@ body {
 .ordered-list li{
     margin-bottom: 16px;
 }
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
@@ -282,6 +290,11 @@ footer hr{
     background-color: var(--clr-primary-100);
 }
 
+@media(max-width:1350px){
+    .primary_heading--smaller{
+        font-size: 3rem;
+    }
+}
 
 
 /* &breakpoint */
@@ -318,5 +331,14 @@ footer hr{
     }
     .ordered-list{
         margin-left: 0px;
-    }  
+    } 
+    
+    .primary_heading--smaller{
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .center{
+        align-items: unset;
+    }
 }

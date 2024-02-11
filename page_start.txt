@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/zavody.css">
 
     <!-- "apis" -->
     <script src="https://kit.fontawesome.com/6797287db8.js" crossorigin="anonymous"></script>
@@ -144,7 +145,47 @@
             </header>
 
         <main>
+              <h2 class="primary_heading primary_heading--smaller primary_heading--main text_center">nadpis</h2>
 
+             <h3 class="secondary_heading secondary_heading--racing text_center">šestý ročník - 2024
+            </h3>
+
+            <section class="racing_select">
+               <button onclick="openRacingDropdown()" class="racing_button">Ročníky <i class="fa-solid fa-chevron-down" id="arrow"></i> </button>
+               <div id="myDropdown" class="racing_dropdown">
+                   <a href="#">Ročník 2024</a>
+                   <a href="#">Ročník 2023</a>
+                   <a href="#">Ročník 2022</a>
+                   <a href="#">Ročník 2021</a>
+                   <a href="#">Ročník 2020</a>
+                   <a href="#">Ročník 2019</a>
+                   <a href="#">Ročník 2018</a>
+               </div>
+           </section>
+            
+            
+            <div class="sponzors padding-block--300 container">
+               <h2 class="secondary_heading text_center">Partneři závodů</h2>
+               <div class="sponzor_wrapper">
+                   <button>  <i class="fa-solid fa-chevron-left sponzor_btn" id="prevBtn"></i></button>
+                   <div class="sponzors_wrapper" id="slider">
+                       <img src="images/sponzoři/royalbay.png" class="slide" id="slider_image" alt="">
+
+                       <img src="images/sponzoři/skicentrumsportprofi.png" class="slide" alt="">
+                       <img src="images/sponzoři/sklojanecek.png" class="slide" alt="">
+                       <img src="images/sponzoři/sportujsnami.png"class="slide" alt="">
+                       <img src="images/sponzoři/uvex.png" class="slide" alt="">
+                       <img src="images/sponzoři/caprisun.png" class="slide" alt="">
+                       <img src="images/sponzoři/craft.png" class="slide" alt="">
+                       <img src="images/sponzoři/excel.png" class="slide" alt="">
+                       <img src="images/sponzoři/horskasluzba.png" class="slide" alt="">
+                       <img src="images/sponzoři/primator.png" class="slide" alt="">
+                       <img src="images/sponzoři/rex.png" class="slide" alt="">
+                       <img src="images/sponzoři/rossignol.png" class="slide" alt="">
+                   </div>
+                   <button><i class="fa-solid fa-chevron-right sponzor_btn" id="nextBtn"></i></button>
+               </div>
+          </div>
         </main>
 
         <!-- <footer class="container">
@@ -155,5 +196,7 @@
             </div>
         </footer> -->
  	<script src="js/menu.js"></script>
+   <script src="js/infinite.js"></script>
+   <script src="js/general.js"></script>
     </body>
 </html>

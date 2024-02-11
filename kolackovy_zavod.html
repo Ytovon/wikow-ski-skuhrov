@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/zavody.css">
+    <link rel="stylesheet" href="css/aktuality.css">
 
     <!-- "apis" -->
     <script src="https://kit.fontawesome.com/6797287db8.js" crossorigin="anonymous"></script>
@@ -147,51 +149,108 @@
                 </div>
             </header>
 
-        <main class="offer">
-            <h2 class="primary_heading primary_heading--main text_center">Co nabízíme</h2> 
+        <main>
+              <h2 class="primary_heading primary_heading--main text_center">Koláčkový závod</h2>
+
+             <h3 class="secondary_heading secondary_heading--racing text_center">šestý ročník - 2024
+            </h3>
+
+            <section class="racing_select">
+               <button onclick="openRacingDropdown()" class="racing_button">Ročníky <i class="fa-solid fa-chevron-down" id="arrow"></i> </button>
+               <div id="myDropdown" class="racing_dropdown">
+                   <a href="#">Ročník 2024</a>
+                   <a href="#">Ročník 2023</a>
+                   <a href="#">Ročník 2022</a>
+                   <a href="#">Ročník 2021</a>
+                   <a href="#">Ročník 2020</a>
+                   <a href="#">Ročník 2019</a>
+                   <a href="#">Ročník 2018</a>
+               </div>
+           </section>
             
-            <section class="padding-block--300">
-                <div class="container">
-                    <ul class="unordered-list">
-                        <li><span class="special-text--blue">všestrannost</span> – lyžujeme, běháme, plaveme, posilujeme, jezdíme na kole, na bruslích, lezeme po skalách, sjíždíme řeky …
-                        </li>
-                        <li><span class="special-text--blue">kamarádský</span> kolektiv, jsme jeden tým</li>
-                        <li><span class="special-text--blue">pravidelné</span> trénování</li>
-                        <li><span class="special-text--blue">letní a zimní soustředění</span> (nejen v ČR)</li>
-                        <li><span class="special-text--blue">zapůjčení </span> tréninkových a závodních lyží <span class="special-text--blue">zdarma</span></li>
-                        <li>školené trenéry A, B a C třídy</li>
-                        <li>kvalitní vybavení, pomůcky, zázemí na horách</li>
-                        <li>možnost účastnit se krajských a republikových závodů od žákovských kategorií</li>
-                        <li>disponujeme mikrobusy a sněžnými skútry (úprava lyžařských běžeckých tratí)</li>
-                        <li>pořádáme významné závody pro závodníky, ale i pro širokou veřejnost:<span class="special-text--blue"> Orlický maratón,</span>, Orlický RollerSki Cup, Koláčkový závod, Běh údolím řeky Bělé</li>
-                    </ul>
-    
-                    <h3 class="secondary_heading">Vhodné pro</h3>
-                    <ul class="unordered-list">
-                        <li>holky a kluky od 5ti let ze širokého okolí (např. Deštné v Orlických horách, Dobruška, Hroška, Kvasiny, Lukavice, Rychnov nad Kněžnou, Solnice ….)
-                        </li>
-                        <li>děti i dospělé se zájmem o sport, pro ty, co chtějí udělat něco pro své zdraví a užít si legraci
-                        </li>
-                    </ul>
-                </div>
-            </section>
+           <section class="container">
+            <div>
+                 <div class="racing__where-wrapper">
+                     <div>
+                         <h3 class="secondary_heading text_center">Kdy
+                         </h3>
+                         <p>15. 9. 2023 16:45
+                        </p>
+                     </div>
 
-            <div class="divider container">
-                <hr class="divider__line">
-                <img src="images/logo_with_bg.png" alt="" class="divider__image">
+                     <div>
+                         <h3 class="secondary_heading text_center">Kde
+                         </h3>
+                         <p>Skuhrov nad Bělou - sportovní hřiště naproti benzínové pumpě
+                        </p>
+                     </div>
+
+                     <div>
+                         <h3 class="secondary_heading text_center">Co
+                         </h3>
+                         <p>Obratnostní závod
+                        </p>
+                     </div>
+
+                     <div>
+                         <h3 class="secondary_heading text_center">Kdo
+                         </h3>
+                         <p>2008 a mladší
+                        </p>
+                     </div>
+
+                     <div class="align-self--center">
+                         <p class="special-text--blue">před 149 dní a 8:45:17
+                        </p>
+                     </div>
+                 </div>
             </div>
+         </section>
 
-            <section class="container padding-block--400">
-                <div class="link-tree">
-                    <h3 class="secondary_heading">Zaujala Vás nabídka?</h3>
-                <p>Neváhejte a zjistěte si více:</p>
-                <ul class="link-tree__links">
-                    <li><a href="jak_trenujeme.html">Jak trénujeme?</a></li>
-                    <li><a href="clenstvi.html">Členství</a></li>
-                    <li><a href="kontakt.html">Kontakty</a></li>
-                </ul>
-                </div>
-            </section>
+        <div class="container padding-block--300 racing__text">
+            <p>
+                Zveme Vás na další ročník koláčkového běhu. Příjďte se na nás podívat a třeba rozšíříte naše řady. Těšíme se na ty nejmenší, ale nepohrdneme i otrkanými dorostenci.
+            </p>
+        </div>
+
+        <section class="container">
+            <div class="racing__proposition">
+                <a href="" class="active_link">Propozice</a>
+                <a href="" class="non-active_link">Startovka</a>
+                <a href="" class="active_link">Výsledky</a>
+            </div>
+        </section>
+
+        <section class="container padding-block--300">
+            <h3 class="secondary_heading">Koláčkový závod - plakát </h3>
+
+            <a href="https://www.ski-skuhrov.cz/assets/imgs/temporary/letak_nabor_2019.pdf" target="_blank"><img src="images/kolackovy_beh.png" alt="" class="actuality-content__image--small actuality-content__image"></a>
+              
+              <a href="" class="special-text--lblue">Zobrazit platát ></a>
+          </section>
+            
+            <div class="sponzors padding-block--300 container">
+               <h2 class="secondary_heading text_center">Partneři závodů</h2>
+               <div class="sponzor_wrapper">
+                   <button>  <i class="fa-solid fa-chevron-left sponzor_btn" id="prevBtn"></i></button>
+                   <div class="sponzors_wrapper" id="slider">
+                       <img src="images/sponzoři/royalbay.png" class="slide" id="slider_image" alt="">
+
+                       <img src="images/sponzoři/skicentrumsportprofi.png" class="slide" alt="">
+                       <img src="images/sponzoři/sklojanecek.png" class="slide" alt="">
+                       <img src="images/sponzoři/sportujsnami.png"class="slide" alt="">
+                       <img src="images/sponzoři/uvex.png" class="slide" alt="">
+                       <img src="images/sponzoři/caprisun.png" class="slide" alt="">
+                       <img src="images/sponzoři/craft.png" class="slide" alt="">
+                       <img src="images/sponzoři/excel.png" class="slide" alt="">
+                       <img src="images/sponzoři/horskasluzba.png" class="slide" alt="">
+                       <img src="images/sponzoři/primator.png" class="slide" alt="">
+                       <img src="images/sponzoři/rex.png" class="slide" alt="">
+                       <img src="images/sponzoři/rossignol.png" class="slide" alt="">
+                   </div>
+                   <button><i class="fa-solid fa-chevron-right sponzor_btn" id="nextBtn"></i></button>
+               </div>
+          </div>
         </main>
 
         <footer class="container">
@@ -202,5 +261,7 @@
             </div>
         </footer>
  	<script src="js/menu.js"></script>
+   <script src="js/infinite.js"></script>
+   <script src="js/general.js"></script>
     </body>
 </html>

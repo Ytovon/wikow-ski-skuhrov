@@ -5,3 +5,11 @@ actualities.forEach(function(actuality, index) {
         actuality.style.display = "none";
     }
 });
+
+function openRacingDropdown () {
+    const dropdown = document.getElementById('myDropdown');
+    const arrow = document.getElementById('arrow')
+
+    dropdown.classList.toggle('show');
+    arrow.classList.toggle('rotate');
+  }

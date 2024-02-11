@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/aktuality.css">
+    <link rel="stylesheet" href="css/zavody.css">
 
     <!-- "apis" -->
     <script src="https://kit.fontawesome.com/6797287db8.js" crossorigin="anonymous"></script>
@@ -149,40 +149,84 @@
             </header>
 
         <main>
-                <h2 class="primary_heading primary_heading--main text_center">Tratě</h2>
+            <h2 class="primary_heading primary_heading--smaller primary_heading--main text_center">Pohár Královéhradeckého kraje</h2>
 
-                <section class="container padding-block--300">
-                  <h3 class="secondary_heading">Lyžařské běžecké tratě Wikow SKI Skuhrov </h3>
+            <h3 class="secondary_heading secondary_heading--racing text_center">šestý ročník - 2024
+            </h3>
 
-                  <a href="https://www.ski-skuhrov.cz/assets/imgs/temporary/letak_nabor_2019.pdf" target="_blank"><img src="images/LyzarskeTrateDestne.jpg" alt="" class="actuality-content__image--small actuality-content__image"></a>
-                    
-                    <a href="" class="special-text--lblue">Zobrazit tratě ></a>
-                </section>
-
-                <!-- actuality divider with logo -->
-                <div class="divider container">
-                  <hr class="actuality-divider__line">
-                  <img src="images/logo_with_bg.png" alt="" class="divider__image">
+            <section class="racing_select">
+               <button onclick="openRacingDropdown()" class="racing_button">Ročníky <i class="fa-solid fa-chevron-down" id="arrow"></i> </button>
+               <div id="myDropdown" class="racing_dropdown">
+                   <a href="#">Ročník 2024</a>
+                   <a href="#">Ročník 2023</a>
+                   <a href="#">Ročník 2022</a>
+                   <a href="#">Ročník 2021</a>
+                   <a href="#">Ročník 2020</a>
+                   <a href="#">Ročník 2019</a>
+                   <a href="#">Ročník 2018</a>
                </div>
+           </section>
 
-                <section class="container padding-block--300">
-                  <h3 class="secondary_heading">Úprava tratí</h3>
+            <section class="container">
+                  <div class="racing__list-wrapper padding-block--300">
+                     <div>
+                        <h3 class="secondary_heading">Lyžařské závody</h3>
 
-                  <div class="actuality-content">
-                     <p>Wikov SKI Skuhrov nad Bělou udržuje v areálu v Deštném v Orlických horách závodní běžecké tratě v délce 1, 2, 3, 4 a 5km, které jsou homologovány Svazem lyžařů ČR pro pořádání Mistrovských závodů a 2 trasy "Buď fit" v délce 3 a 4km. Tratě jsou situovány do údolí Ošerovského potoka a přilehlých strání. Jsou vedeny po zpevněných cestách a loukách v dostatečné šířce pro klasický i volný styl. Tratě jsou v terénu vyznačeny barevnými plastovými nebo kovovými směrovkami. Tratě jsou přístupné veřejnosti a je možno je libovolně kombinovat podle fyzické zdatnosti a lyžařské dovednosti.</p>
+                        <ul class="unordered-list">
+                           <li><span class="special-text--blue">30. 12. 2022</span>- Skuhrov - klasika (nominační závody)</li>
+                           <li><span class="special-text--blue">8. 1. 2023 </span> - Machov – volně (snad nominační závod)</li>
+                           <li><span class="special-text--blue">11. 2. 2023</span> - Trutnov – volně (přebor)</li>
+                           <li><span class="special-text--blue">12. 2. 2023</span> - Police – klasika štafety</li>
+                           <li><span class="special-text--blue">18. 3. 2023</span>- Vrchlabí – obratnostní závod (jen žactvo)</li>
+                           <li><span class="special-text--blue">1. 4. 2023</span> - Skuhrov - ski kritérium (Vyhlášení poháru)</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <h3 class="secondary_heading">Přespolní běhy</h3>
 
-                     <p>Aktuální stav přilehlých turistických tras můžete zkontrolovat na bilestopy.cz</p>
-   
-                     <p>V sezóně 2021/22 údržbu tratí spolufinancovala NADACE ČEZ částkou 70.000 Kč, prostřednictvím programu EPP Pomáhej pohybem</p>
-   
-                     <p class="special-text--blue">Děkujeme za podporu!</p>
-
-                    <div class="actuality-content__sponzors">
-                       <img src="images/sponzoři/nadace_cez.png" alt="">
-                    </div>
+                        <ul class="unordered-list">
+                           <li><span class="special-text--blue">10. 9. 2022</span> - Studenec?</li>
+                           <li><span class="special-text--blue">18. 9. 2022 </span> - Špindl</li>
+                           <li><span class="special-text--blue">1. 10. 2022</span> - Trutnov</li>
+                           <li><span class="special-text--blue">9. 10. 2022</span>- Machov</li>
+                           <li><span class="special-text--blue">15. 10. 2022</span> - Letohrad</li>
+                           <li><span class="special-text--blue">16. 10. 2022</span> - Police</li>
+                        </ul>
+                     </div>
                   </div>
-                </section>
 
+                  <div>
+                     <ul class="unordered-list center">
+                        <li class="special-text--lblue">Termínová listina 2022-2023</li>
+                        <li class="special-text--lblue">Výsledky 2021-2022</li>
+                        <li class="special-text--lblue">Výsledky 2019-2020</li>
+                        <li class="special-text--lblue">Výsledky 2018-2019</li>
+                     </ul>
+                  </div>
+            </section>
+
+            <div class="sponzors padding-block--300 container">
+               <h2 class="secondary_heading text_center">Partneři závodů</h2>
+               <div class="sponzor_wrapper">
+                   <button>  <i class="fa-solid fa-chevron-left sponzor_btn" id="prevBtn"></i></button>
+                   <div class="sponzors_wrapper" id="slider">
+                       <img src="images/sponzoři/royalbay.png" class="slide" id="slider_image" alt="">
+
+                       <img src="images/sponzoři/skicentrumsportprofi.png" class="slide" alt="">
+                       <img src="images/sponzoři/sklojanecek.png" class="slide" alt="">
+                       <img src="images/sponzoři/sportujsnami.png"class="slide" alt="">
+                       <img src="images/sponzoři/uvex.png" class="slide" alt="">
+                       <img src="images/sponzoři/caprisun.png" class="slide" alt="">
+                       <img src="images/sponzoři/craft.png" class="slide" alt="">
+                       <img src="images/sponzoři/excel.png" class="slide" alt="">
+                       <img src="images/sponzoři/horskasluzba.png" class="slide" alt="">
+                       <img src="images/sponzoři/primator.png" class="slide" alt="">
+                       <img src="images/sponzoři/rex.png" class="slide" alt="">
+                       <img src="images/sponzoři/rossignol.png" class="slide" alt="">
+                   </div>
+                   <button><i class="fa-solid fa-chevron-right sponzor_btn" id="nextBtn"></i></button>
+               </div>
+          </div>
         </main>
 
         <footer class="container">
@@ -193,5 +237,7 @@
             </div>
         </footer>
  	<script src="js/menu.js"></script>
+ 	<script src="js/infinite.js"></script>
+ 	<script src="js/general.js"></script>
     </body>
 </html>
