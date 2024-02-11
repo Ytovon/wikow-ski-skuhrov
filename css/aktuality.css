@@ -14,26 +14,6 @@
     text-align: right;
 }
 
-/* divider */
-.actuality-divider{
-    position: relative;
-}
-.actuality--logo .actuality-divider{
-    margin-top: 40px;
-}
-.actuality-divider__image{
-    position: absolute;
-    top:0;
-    right: 50%;
-    transform: translate(50%,-50%);
-    width: 130px;
-}
-.actuality-divider__line{
-    height: 3px;
-    background-color: var(--clr-primary-100);
-}
-
-
 /* content */
 /* text style */
 .actuality-content p{
@@ -51,14 +31,6 @@
     width: 200px;
 }
 
-/*list styling*/
-.actuality-content__list{
-    margin-left: 2rem;
-    margin-block: 2rem;
-    list-style: disc inside;
-    color: var(--clr-primary-100); /* Set the text color of the list items */
-
-}
 /* images types*/
 .actuality-content__images{
     display: flex;
@@ -87,6 +59,14 @@
     gap: 1rem;
     flex-wrap: wrap;
 }
+@media (max-width:1350px){
+    .actuality--logo .divider{
+        margin-top: 25px;
+    }
+    .actuality--logo .divider__image{
+        width: 115px;
+    }
+}
 
 /* breakpoints */
 @media(max-width:900px){
@@ -110,9 +90,9 @@
     .actuality{
         padding-block: 3rem;
     }
-    
-    .actuality-divider{
-        margin-top: 45px;
+
+    .divider{
+        margin-top: 10px;
     }
     .actuality-heading h3{
         font-size: 21px;
@@ -128,7 +108,7 @@
     }
 
     /* styles just for actuality with logo - actuality--logo*/
-    .actuality--logo .actuality-divider{
+    .actuality--logo .divider{
         margin-top: 40px;
     }    
     .actuality--logo .actuality-content p{
@@ -139,4 +119,9 @@
     .actuality-content__images{
         row-gap: 1.5rem;
     }
+
+    .actuality-content__images img,
+    .video{
+        width: 100%;
+    }    
 }

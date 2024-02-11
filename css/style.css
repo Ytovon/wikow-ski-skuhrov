@@ -225,8 +225,7 @@
 
 .sponzor_wrapper{
     display: flex;
-    align-items: center;
-   
+    align-items: center;   
 }
 .sponzors_wrapper{
     display: flex;
@@ -299,6 +298,91 @@ button{
 }
 .service--contact .services_wrapper{
     margin:0;
+}
+
+
+/* nabídka */
+.offer .unordered-list{
+    margin-block:unset;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+/* jak trénujeme */ 
+.offer .unordered-list li,
+.training .unordered-list li{
+    margin-bottom: 15px;
+}
+
+.link-tree__links{
+    list-style: disc inside;
+    padding-left: 2rem;
+    margin-top: 1.3rem;
+}
+.link-tree__links li{
+    margin-bottom: 15px;
+}
+.link-tree__links a{
+    color: var(--clr-accent-200);
+    font-weight: var(--fw-semi-bold);
+}
+.link-tree__links a:hover{
+    text-decoration: underline;
+}
+
+/* jak trénujeme */
+.training_heading{
+    margin-top: 6rem;
+}
+
+
+/* členství */
+.membership__table{
+    width: 100%;
+    border: 2px solid rgb(82, 82, 82);
+    border-collapse: collapse;    
+}
+.membership__table th{
+    color:white;
+    background-color:var(--clr-primary-100);
+    border: 2px solid black;
+    height: 40px;  
+    font-weight: var(--fw-semi-bold); 
+    padding-block: 5px; 
+}
+.membership__table td{
+    border: 2px solid black;  
+    height: 40px;
+    text-align: center;
+    padding-block: 5px;
+}
+/* styling the first column */
+.membership__table td:nth-child(1){
+    color: var(--clr-primary-100);
+    font-weight: var(--fw-semi-bold); 
+    text-align: left;  
+    padding-left:10px
+}
+/*styling the last column*/
+.membership__table td:nth-last-child(1){
+    color: var(--clr-primary-100);
+    font-weight: var(--fw-semi-bold);   
+}
+
+
+.membership .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+      
+}
+.membership .flex--contact{
+    margin-top: 1rem;
+    row-gap: 0.8rem;
+}
+
+.membership__link{
+    margin-top: 2rem;
 }
 
 
@@ -410,7 +494,7 @@ button{
     }
 
     #logo{
-        min-width: 220px;
+        min-width: 215px;
         max-width: 250px;
     }
 
@@ -434,5 +518,14 @@ button{
         margin-top: 75px;
         row-gap: 4.5rem;
     }   
+
+    .offer .unordered-list li,
+    .training .unordered-list li{
+    margin-bottom: 25px;
+    }
+
+    .membership__table td{
+        font-size: 16px;
+    }
 }
 

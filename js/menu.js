@@ -28,7 +28,6 @@ dropdownItems.forEach(function(item) {
       dropdownMenu.classList.toggle('active-menu');  
       window.document.documentElement.classList.toggle('overflow');
      }
-     
      // zbytečně složité, ale přes class nefungovalo - otáčení šipky
     if(dropdownMenu.classList.contains('active-menu')){
     dropdownArrow.style.transform = "rotate(180deg)";
